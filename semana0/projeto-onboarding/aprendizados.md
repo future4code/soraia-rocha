@@ -1,0 +1,2 @@
+# Aprendizados da semana
+Nesta semana começamos o curso com aulas sobre as ferramentas que iremos itlizar durante nossa jornada. Tivemos aulas sobre diversidade e empregabilidade. Depois iniciamos os aprendizados práticos sobre como usar o **terminal**, como usar o **git** e por ultimo como utlizar o **VScode.**
