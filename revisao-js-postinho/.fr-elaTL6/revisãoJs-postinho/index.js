@@ -78,7 +78,7 @@ console.log ("Usuário logado")
 }
     else {
 console.log ("senha invalida")}
- 
+ return login
 }
 
 console.log(login());
@@ -87,25 +87,33 @@ console.log(login());
 
 const primeiraDose = () => {
 
+    let tempo, data = new Date()
     const nome = prompt ("Digite seu nome")
     const vacina = promp ("Digite qual vacina você tomou")
     
-
-    if (vacina === Astrazeneca)
-    tempo 90 && data 19/12
-
-    if (vacina === Pfizer)
-    tempo 90 && data 19/12
-
-    else 
-    tempo 28 && data 16/11
+    if (vacina.toLowerCase === Astrazeneca)
+    tempo 90 
     
+    else if (vacina.toLowerCase === Pfizer)
+    tempo 90
     
+    else if (vacina.toLowerCase === coronavac
+    tempo 28
 
-return primeiraDose (`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. Compareça no posto na data ${data}`)
+    const milissegundos1dia = 86400000
+    const hoje = data.getTime()
+    console.log ("Hoje getTime():" +hoje)
 
+    const dataAtualizada = new Date (hoje + (tempo*milissegundos1dia))
+    console.log ("Data atualizada:" + dataAtualizada)
+    const dataFormatada = dataAtualizada.toLocaleTimeString (pt-BR)
+
+    return primeiraDose (`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias. /n
+    Compareça no posto na data ${data}`)
+    
 }
 console.log(primeiraDose)
+    
 
 
 // LOOP+CONDICIONAL
