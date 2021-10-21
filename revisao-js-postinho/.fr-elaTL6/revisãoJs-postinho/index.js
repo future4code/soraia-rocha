@@ -126,14 +126,19 @@ const segundaDose = (nomeDoUsuario) => {
         { nome: "Barbara", imunizacao: "incompleta" },
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
+const pessoaImunizada = usuarios.map((pessoa) => {
 
-    //  Sua lógica aqui
-
-
+    if (pessoa.nome === nomeDoUsuario{
+    pessoa.imunizacao = "completa"
+    }
+    return pessoa
+})
+console.log (pessoaImunizada)
 }
 console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
+
 
 const avisoAosAtrasados = () => {
     const usuarios = [
@@ -141,11 +146,19 @@ const avisoAosAtrasados = () => {
         { nome: "Barbara", imunizacao: "completa" },
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
+const atrasados = usuarios.filter(pessoas)) => {
+    if (pessoa.imunizacao === "incompleta"){
+        return true
+    })
+    const mensagem = atrasados.map(pessoa)) =>{
+    console.log (`Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao}, por favor volte ao postinho para tomar a segunda dose.`)
 
-    //  Sua lógica aqui
+    })
 
 }
 console.log(avisoAosAtrasados());
+
+
 
 
 // DESAFIO------------------------------------------------------------------------------------------
